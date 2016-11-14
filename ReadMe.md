@@ -1,8 +1,8 @@
-﻿# Advanced Programing 2016
+﻿# Advanced Programming 2016
 ## By Boris Ruiz Palma
-##### Active Colaborators: José Andrés Álvarez Cabrera
-### August 22nd, 2016
+##### Active Colaborators: José Andrés Álvarez Cabrera, Yulisa Ninett Azurdia Martínez.
 #### [The Slides for this course can be found here](https://docs.google.com/presentation/d/1E-2gj9hJMsxTLuwpwJ7g4hJY1O_hTjuw46iE4ttdK5s/edit#slide=id.g117415e531_0_24)
+### August 22nd, 2016
 
 We used Markdown as an example of internal documentation and a proper way to 
 describe our released features.
@@ -93,3 +93,59 @@ We reviewed how to represent recursive calls using tree-like diagrams. After fin
 
 ### September 14th, 2016
 ####Exam!
+
+### September 18th, 2016
+
+We presented a solution for the first exam of the course, and created some functions applying recursivity
+
+####Palindromic words
+A word is palindrome if the word reads the same forward as it does backward. This means that the meaning does not change. 
+
+Example: the word “level”. Because we can do an inversion of the word and the meaning will be the same. 
+
+In the project, there is a method that receive a string and the function of the method is to compare if the first half of the word is the same that the other half. 
+
+####Prime numbers
+To resolve this exercise in a recursive way we will need two parameters for our method “Prim”. The first parameter will be the number, and the second one will be the divisor. In this case, the method will do successive divisions. 
+
+if (y == 1)
+
+If the condition above is met, we will return true. 
+
+if (x % y == 0)
+
+If the condition above is met, we will return false because it means that the number can be divided for other numbers different of 1 and the same number entered. 
+
+If the division is not exact we will decrease the divisor 1 number so we can continue with the successive divisions until one of the conditions can be met. 
+
+Also, in the project it is a method with “x” as parameter (x is the number that will be evaluated). This method calls the “Prim” function so we can return the result. 
+
+### September 21th, 2016
+Day off.
+
+### September 26th, 2016
+After an overview of how memory hierarchy works, we started to learn C++ as it's memory management is more transparent to the programmer *unlike .net languages*. 
+After a quick introduction on how to set up a C++ project we introduce the concept of pointers and its operators.
+
+### September 28th, 2016
+Day off.
+
+### October 3rd, 2016
+*"We have talked about pointers, but not about their practical application..."* - after such statement, we mention their application representing queues and stacks.
+
+*"If we delete a position in the list, how do we know where the empty element is...?"*
+
+Basically, we talked about the concept of a **linked list**, the type of structure that
+allows to implement dynamic stacks and queues using pointers.
+Homework was to look up what is a **double linked list**...
+
+### October 5th, 2016
+The previous class we talked about how expensive it would be to delete an specific element from a list and shift the left ones in an implementation using arrays.
+* It turns out that is such more better to use a **linked list**, since it would only imply modifying the direction in memory that the *next* property of an element in the list is pointing to. We have then new several possibilities for working with queues, stacks and lists.
+
+Also, we note that the elements in a **double linked list** have a reference to the previous and next node.
+
+* *"What would happen if we look for an element in a list that is not double-linked...?"* It would be necessary to start from the begginning. For example, if we want to look for an element 2 nodes behind... a node wouldn't know how to go backwards; but if it is double-linked everything changes since it will have a *next* and *previous* property.
+
+Furthermore, we made a couple of exercises applying pointers.
+
